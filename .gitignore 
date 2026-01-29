@@ -1,0 +1,67 @@
+# Added by IzumiCypherX for local testing purposes
+test/
+*test.go
+.vscode/
+*.old
+.vim/
+*.session
+log.txt
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go build
+bin/
+shivu-go
+shivu
+
+# Go workspace file
+go.work
+
+# Dependency directories
+vendor/
+
+# Go coverage files
+*.out
+coverage.txt
+*.coverprofile
+
+# IDE specific files
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Log files
+*.log
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Build artifacts
+dist/
+build/
+release/
