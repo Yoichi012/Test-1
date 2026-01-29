@@ -1,0 +1,4 @@
+# This file will be auto-generated when you run: go mod download
+# Run the following commands to generate it:
+# go mod download
+# go mod tidy
