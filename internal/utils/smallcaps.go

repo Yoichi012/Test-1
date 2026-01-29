@@ -1,0 +1,24 @@
+package utils
+
+import "strings"
+
+// small caps helper (simplified)
+var smallCapsMap = map[rune]rune{
+	'a': 'ᴀ', 'b': 'ʙ', 'c': 'ᴄ', 'd': 'ᴅ', 'e': 'ᴇ', 'f': 'ꜰ',
+	'g': 'ɢ', 'h': 'ʜ', 'i': 'ɪ', 'j': 'ᴊ', 'k': 'ᴋ', 'l': 'ʟ',
+	'm': 'ᴍ', 'n': 'ɴ', 'o': 'ᴏ', 'p': 'ᴘ', 'q': 'ǫ', 'r': 'ʀ',
+	's': 's', 't': 'ᴛ', 'u': 'ᴜ', 'v': 'ᴠ', 'w': 'ᴡ', 'x': 'x',
+	'y': 'ʏ', 'z': 'ᴢ',
+}
+
+func ToSmallCaps(s string) string {
+	var b strings.Builder
+	for _, r := range strings.ToLower(s) {
+		if v, ok := smallCapsMap[r]; ok {
+			b.WriteRune(v)
+		} else {
+			b.WriteRune(r)
+		}
+	}
+	return b.String()
+}
